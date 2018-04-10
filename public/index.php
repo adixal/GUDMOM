@@ -1,5 +1,5 @@
 <?php
-
+// jiji una linea que hace cosas die($_SERVER['REQUEST_URI']);
 /**
  * Laravel - A PHP Framework For Web Artisans
  *
