@@ -13,6 +13,12 @@
                             {{ session('status') }}
                         </div>
                     @endif
+                    <form name="formulario" method="post" action="Route::get('/', function () {
+    return view('welcome');">
+                        <input type="submit" value="Enviar formulario">
+                    </form>
+
+
 
                     You are logged in!
                 </div>
