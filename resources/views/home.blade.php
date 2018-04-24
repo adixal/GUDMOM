@@ -31,7 +31,7 @@
         </nav>
         
         <footer>GUDMOM INC</footer>
-    </body>
+    </body> 
 
 </html>
 

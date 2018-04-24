@@ -14,9 +14,12 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
 Route::get('/buscar', function () {
     return view('buscar');
 });
+Route::get('/mostrar','GudmomController@show');
+Route::post('/buscar','GudmomController@buscando');
 
 Auth::routes();
 
@@ -26,4 +29,4 @@ Route::get('/ser', function () {
     return view('ser');
 });
 Route::post('/ser','GudmomController@guardar');
-Route::get('/registros','GudmomController@show ');
+//Route::get('/registros','GudmomController@show ');

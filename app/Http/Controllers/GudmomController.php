@@ -30,8 +30,13 @@ class GudmomController extends Controller
     	$gudmom->Descripcion=$request->input('Descripcion'); 
     	$gudmom->save();*/
     	gudmom::create ($request->all());
-    	return "completado";
+    	return redirect(route('home'));
 
+    }
+    public function buscando (Request $request)
+    {
+
+    		return "funciona";
     }
 }
 
