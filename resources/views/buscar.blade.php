@@ -1,3 +1,6 @@
+@extends('layouts.app')
+
+@section('content')
 <html>
 <head>
     <meta charset="utf-8">
@@ -5,32 +8,29 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
-
-    <title>Floating labels example for Bootstrap</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="../../../../dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/floating-labels.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <title>Busca tu GUDMOM</title>
   </head>
   <body>
-    <form class="form-signin">
-      
+    <div class="row justify-content-center">
+    <form class="form-inline">
+  <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Busca tu Gudmom</label>
+  <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+    <option selected>Elige tu cuidad</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
 
-      <div class="form-label-group">
-        <input type="email" id="inputEmail" class="form-control" placeholder="Buscar por ciudad" required="" autofocus="">
-        <label for="inputCity">Busca tu GUDMOM</label>
-      </div>
+  <div class="custom-control custom-checkbox my-1 mr-sm-2">
+    <input type="checkbox" class="custom-control-input" id="customControlInline">
+    <label class="custom-control-label" for="customControlInline">Remember my preference</label>
+  </div>
 
-
-      
-
-      
-      <button class="btn btn-lg btn-primary btn-block" type="submit">Buscar</button>
-      
-    </form>
-  
+  <button type="submit" class="btn btn-primary my-1">Buscar</button>
+</form>
+  </div>
 
 </body>
 </html>
+@endsection

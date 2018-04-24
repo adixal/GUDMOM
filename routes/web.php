@@ -14,6 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/buscar', function () {
+    return view('buscar');
+});
 
 Auth::routes();
 
@@ -22,3 +25,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/ser', function () {
     return view('ser');
 });
+Route::post('/ser','GudmomController@guardar');
+Route::get('/registros','GudmomController@show ');
